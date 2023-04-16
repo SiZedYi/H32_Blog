@@ -9,12 +9,6 @@ body {
 	height: 100%;
 }
 
-/*  */
-.slider {
-	position: relative;
-	height: 100vh !important;
-	overflow: hidden;
-}
 .sub-text {
 	color: var(--txt-color-700);
 }

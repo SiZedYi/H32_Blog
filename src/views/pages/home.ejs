@@ -24,8 +24,8 @@
 <body>
     <%- include('../partials/header') %>
 
-        <div class="main swiper mySwiper">
-            <div class="swiper-wrapper">
+        <div class="main  mySwiper">
+            <div class="">
                 <div class="swiper-slide">
                     <div class="slider" id="intro">
                         <div class="bg-image" data-aos="fade-down" data-aos-duration="10000">
@@ -34,7 +34,7 @@
                         <div class="row inner">
                             <div class="col-6 d-flex justify-content-center align-items-center">
                                 <div class="p-5" data-aos="fade-right" data-aos-delay="400" data-aos-duration="10000">
-                                    <h1>WELCOME to H3.2</h1>
+                                    <h1 class="font-dyna">WELCOME to H3.2</h1>
                                     <p class="sub-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                                         numquam
                                         repellendus
@@ -56,7 +56,7 @@
                 <div class="swiper-slide">
                     <div class="slider" id="teachers">
                         <div class="row inner">
-                            <div class="col-6 d-flex justify-content-center align-items-center">
+                            <div class="col-6 order-2 d-flex justify-content-center align-items-center">
                                 <div class="p-5" data-aos="fade-left" data-aos-delay="400" data-aos-duration="10000">
                                     <h1>Ths. Nguyễn Hữu Tình</h1>
                                     <ul class="sub-text">
@@ -68,9 +68,60 @@
                                     <a class="button button-secondary">Bấm để xem chi tiết</a>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 order-1">
                                 <div class="image" data-aos="fade-right" data-aos-delay="200" data-aos-duration="10000">
                                     <img src="/images/thaytinh.png" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider" id="members">
+                        <div class="row inner">
+                            <div class="col-6 order-1 d-flex justify-content-center align-items-center">
+                                <div class="p-5" data-aos="fade-left" data-aos-delay="400" data-aos-duration="10000">
+                                    <h1>Các thành viên của lab</h1>
+                                    <ul class="sub-text">
+                                        <li>Hơn 10 năm thành lập số lượng thành viên có hơn 100 người thuộc nhiều chuyên
+                                            ngành khác nhau</li>
+                                        <li>Mọi thành viên trong lab đều có tinh thần sẵn sàng hỗ trợ và giúp đỡ nhau
+                                            học tập và đi lên</li>
+                                        <li>Truyền thống biết cảm ơn là điều đặt biệt nhất, hằng năm lab đều có một
+                                            ngày để mọi người dành lời cảm ơn cho người đã hỗ trợ và dìu dắt mình</li>
+                                    </ul>
+
+                                    <a class="button button-secondary">Danh sách các thành viên</a>
+                                </div>
+                            </div>
+                            <div class="col-6 order-2">
+                                <div class="image" data-aos="fade-right" data-aos-delay="200" data-aos-duration="10000">
+                                    <img src="/images/introlab/memberh32.jpg" alt="" height="100%" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider" id="projects">
+                        <div class="row inner">
+                            <div class="col-6 order-2 d-flex justify-content-center align-items-center">
+                                <div class="p-5" data-aos="fade-left" data-aos-delay="400" data-aos-duration="10000">
+                                    <h1>Xây dựng và phát triển phần mềm</h1>
+                                    <ul class="sub-text">
+                                        <li>Tại H32 có nhiều thành viên thuộc nhiều chuyên ngành khác nhau, nên số lượng
+                                            dự án nhiều và đa dạng chủ đề</li>
+                                        <li>nếu bạn có một số dự án nhưng thiếu nhân lực hoặc một số vị trí chuyên môn
+                                            thì lab sẽ hỗ trợ bạn</li>
+                                        <li>Một số dự án: IUHCoder, H32-blog, ...</li>
+                                    </ul>
+
+                                    <a class="button button-secondary">Xem thêm nhiều dự án</a>
+                                </div>
+                            </div>
+                            <div class="col-6 order-1">
+                                <div class="image" data-aos="fade-right" data-aos-delay="200" data-aos-duration="10000">
+                                    <img src="/images/introlab/project.png" alt="" height="100%" width="100%">
                                 </div>
                             </div>
                         </div>
@@ -91,7 +142,7 @@
             AOS.init();
 
             // Khởi tạo SwiperJS
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper("", {
                 direction: 'vertical',
                 mousewheel: true,
                 pagination: {
