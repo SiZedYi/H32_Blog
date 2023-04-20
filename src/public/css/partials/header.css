@@ -20,7 +20,7 @@
 	background-color: var(--color-primary);
 	margin: 8px;
 	border-radius: 5px;
-	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.125);
+	box-shadow: 0px 1px 4px 0px rgba(255, 255, 255, 0.5);
 }
 .open .line-1 {
 	animation: animate-line-1 0.5s forwards ease-in-out;

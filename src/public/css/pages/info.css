@@ -1,63 +1,94 @@
 /* info lab */
 #join {
-    background-color: var(--background-primary);
+	background: var(--linear-gradient);
+	position: relative
 }
+.title {
+	color: var(--txt-color-50);
+}
+
+.sub-text {
+	color: var(--txt-color-100);
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36);
+}
+/* slider */
+#join .button:hover {
+	transform: translateY(-0.5rem);
+}
+
+
+
+.arrow-down {
+	position: absolute;
+	width: 7rem;
+	height: 10rem;
+	bottom: 0;
+	left: calc(50% - 3.5rem);
+	color: var(--txt-color-100);
+	transition: all 0.2s linear;
+}
+.arrow-down:hover {
+	transform: translateY(1rem);
+}
+
+
+
 /* media contact */
 .phone {
-    height: 80vh;
-    z-index: 0;
-    position: relative;
-    box-shadow: 0 0 1.5rem 0.5rem rgba(0,0,0,0.36);
+	height: 80vh;
+	z-index: 0;
+	position: relative;
+	box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.36);
 }
 .phone .item {
-    position: absolute;
-    width: 12rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    z-index: -1;
+	position: absolute;
+	width: 12rem;
+	height: 3rem;
+	border-radius: 0.5rem;
+	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	z-index: -1;
 }
 .phone .after {
-    top: 24rem;
-    left: 10rem;
-    background-color: var(--red);
+	top: 24rem;
+	left: 10rem;
+	background-color: var(--red);
 }
 .phone .before {
-    top: 8rem;
-    left: -8rem;
-    background-color: var(--yellow);
+	top: 8rem;
+	left: -8rem;
+	background-color: var(--yellow);
 }
 
 .phone img {
-    height: 100%;
-    object-fit: cover;
+	height: 100%;
+	object-fit: cover;
 }
 
 /* medias */
 .media {
-    position: absolute;
-    width: 18rem;
-    height: 3rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
+	position: absolute;
+	width: 18rem;
+	height: 3rem;
+	border-radius: 0.75rem;
+	overflow: hidden;
 
-    background: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+	background: rgba(255, 255, 255, 0.85);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .discord {
-    top: 2rem;
-    left: -12rem;
+	top: 2rem;
+	left: -12rem;
 }
 .grouph32 {
-    top: 12rem;
-    left: 13rem;
+	top: 12rem;
+	left: 13rem;
 }
 .pageiuhcoder {
-    top: 20rem;
-    left: -12rem;
+	top: 20rem;
+	left: -12rem;
 }
