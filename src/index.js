@@ -23,5 +23,5 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(router);
 
 app.listen(port, () =>
-	console.log('> Server is up and running on port : ' + port)
+	console.log('> Server is up and running on port : http://localhost:' + port)
 );
