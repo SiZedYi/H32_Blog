@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
 
 :root {
-	--background-primary: #caf0f0;
-	--color-primary: #1fb1b1;
+	--background-primary: #4dc4ff;
+	--color-primary: #4580e5;
+
+	--linear-gradient: linear-gradient(45deg, #71ddff, #4dc4ff);
 
 	--txt-color-900: #333;
 	--txt-color-700: #808080;
+	--txt-color-100: #efe9f4;
 	--txt-color-50: #fff;
 
 	--white: #fff;
@@ -27,6 +30,9 @@ body,
 html {
 	font-family: 'Roboto', sans-serif;
 }
+*::selection {
+	color: red;
+}
 a,
 a:hover {
 	text-decoration: none;
@@ -40,6 +46,7 @@ a:hover {
 
 .font-dyna {
 	font-family: 'DynaPuff', cursive;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36);
 }
 
 /* button */
@@ -57,7 +64,6 @@ a:hover {
 }
 .button-primary:hover {
 	filter: brightness(0.9);
-	transform: translateX(1rem);
 }
 
 .button.button-secondary {
