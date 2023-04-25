@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-25T11:17:25.750Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.62" etag="fpBhaOei7b8ChJLVRbh7" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-25T11:18:11.947Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.62" etag="QstRTIfJpug1DDM3gVJH" version="21.2.1" type="github">
   <diagram name="Page-1" id="lxIBTwJWbBk2EY63AQeF">
     <mxGraphModel dx="1671" dy="1556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -23,7 +23,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_ElPXZbPNZsHkG2TovLa-4" value="userID varchar" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" parent="_ElPXZbPNZsHkG2TovLa-2" vertex="1">
+        <mxCell id="_ElPXZbPNZsHkG2TovLa-4" value="userID varchar NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" parent="_ElPXZbPNZsHkG2TovLa-2" vertex="1">
           <mxGeometry x="30" width="150" height="30" as="geometry">
             <mxRectangle width="150" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -166,7 +166,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_ElPXZbPNZsHkG2TovLa-49" value="major nvarchar" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" parent="_ElPXZbPNZsHkG2TovLa-47" vertex="1">
+        <mxCell id="_ElPXZbPNZsHkG2TovLa-49" value="major varchar" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" parent="_ElPXZbPNZsHkG2TovLa-47" vertex="1">
           <mxGeometry x="30" width="150" height="30" as="geometry">
             <mxRectangle width="150" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -184,7 +184,7 @@
             <mxRectangle width="60" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_ElPXZbPNZsHkG2TovLa-90" value="userID" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" parent="_ElPXZbPNZsHkG2TovLa-88" vertex="1">
+        <mxCell id="_ElPXZbPNZsHkG2TovLa-90" value="userID varchar" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;html=1;whiteSpace=wrap;" parent="_ElPXZbPNZsHkG2TovLa-88" vertex="1">
           <mxGeometry x="60" width="120" height="30" as="geometry">
             <mxRectangle width="120" height="30" as="alternateBounds" />
           </mxGeometry>
