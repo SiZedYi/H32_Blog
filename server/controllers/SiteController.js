@@ -1,16 +1,15 @@
 
 
 const renderHomePage = (req, res, next) => {
-
-	res.render('pages/home');
+	res.json("Khanh oc cut")
 };
 
 const renderInfoPage = (req, res, next) => {
-	res.render('pages/info');
+	res.json("hesllo")
 };
 
 const renderTimeLinePage = (req, res, next) => {
-	res.render('pages/timeline');
+	res.json("hello")
 };
 
 module.exports = {
