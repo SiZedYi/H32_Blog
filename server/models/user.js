@@ -2,6 +2,8 @@ const {Model, DataTypes} = require('sequelize')
 
 class User extends Model {}
 class UserRole extends Model {}
+class UserUserRole extends Model {}
+
 
 User.init(
     {
@@ -97,3 +99,19 @@ UserRole.init(
       timestamps: false,
     }
   );
+
+  // Thiết lập mối quan hệ
+
+  User.belongsToMany(UserRole, {
+    through: 'UserUserRole',
+    foreignKey: 'userID',
+    otherKey: 'userRoleID',
+  });
+  UserRole.belongsToMany(User, {
+    through: 'UserUserRole',
+    foreignKey: 'userRoleID',
+    otherKey: 'userID',
+  });
+
+  // Export các mô hình
+module.exports = { User, UserRole, UserUserRole };
