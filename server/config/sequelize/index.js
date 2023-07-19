@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('database', 'username', 'password', {
+const sequelize = new Sequelize('h32_blog', 'root', 'anhthang123', {
     host: process.env.HOST_NAME || 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
 });
 
 // Test kết nối
@@ -14,3 +14,5 @@ sequelize
   .catch((err) => {
     console.error('Không thể kết nối đến cơ sở dữ liệu:', err);
   });
+
+module.exports = sequelize;

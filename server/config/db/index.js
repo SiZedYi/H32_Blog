@@ -1,6 +1,6 @@
 'use strict'
 
-var mysql = require('mysql');
+var mysql = require('mysql2');
 var fs = require('fs')
 var readline = require('readline')
 

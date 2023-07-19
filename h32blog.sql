@@ -41,9 +41,9 @@ CREATE TABLE IMAGEUSER (
 CREATE TABLE LabImage (
 	labImageID VARCHAR(50) PRIMARY KEY,
     userID INT NOT NULL,
-    tag VARCHAR(50) NOT NULL,
+    tag VARCHAR             (50) NOT NULL,
     description NVARCHAR(100) DEFAULT "img_lab",
-    year DATETIME DEFAULT CURRENT_TIMESTAMP,
+    year INT DEFAULT '1',
     FOREIGN KEY (userID) REFERENCES USER(userID)
 );
 
@@ -52,6 +52,6 @@ CREATE TABLE TimeLine (
     name VARCHAR(50) NOT NULL,
     tag VARCHAR(50) NOT NULL,
     description NVARCHAR(200) NOT NULL,
-    year DATETIME DEFAULT CURRENT_TIMESTAMP,
+    year INT DEFAULT '2',
     title NVARCHAR(50) NOT NULL
 );
