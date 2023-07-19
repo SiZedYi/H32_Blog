@@ -11,28 +11,27 @@ const apiCode = new ApiCode()
 const listUser = (req, res) => {
 	User.findAll()
     .then(listUser => {
-      return res.json(apiCode.success(listUser, "List User Success"))
+      return res.json(apiCode.success(listUser, "List All User Success"))
     })
     .catch(err => {
-		return res.json(apiCode.error(err, "List User Fail"))
+		return res.json(apiCode.error(err, "List All User Fail"))
     });
 };
 
 //get all roles of 1 userID
 const getUserRoles = (req, res) => {
 	const userID = req.params.userID;
-	sequelize.query(`SELECT *
+	sequelize.query(`SELECT u.userID, u.accountName, userRoleNote
 	FROM USER AS u
 	INNER JOIN USERUSERROLE AS uur ON u.userID = uur.userID
-	INNER JOIN USERROLE AS r ON r.userRoleID = uur.userRoleID
-	WHERE u.userID = ${userID}`, {
+	INNER JOIN USERROLE AS ur ON ur.userRoleID = uur.userRoleID
+	WHERE u.userID = ${userID} AND ur.active = 1`, {
 		model: UserRole,
 		mapToModel: true
 	  }).then(listUser => {
-		res.json(listUser);
+		return res.json(apiCode.success(listUser, "List Roles of User Success"))
 	  }).catch(err => {
-		console.error(err);
-		res.status(500).json({ error: err });
+		return res.json(apiCode.error(err, "List Roles of User Fail"))
 	  });
 	  ;
   };
@@ -40,11 +39,10 @@ const getUserRoles = (req, res) => {
 const listRole = (req, res) => {
 	UserRole.findAll()
     .then(listRole => {
-      res.json(listRole);
+		return res.json(apiCode.success(listRole, "List All Role Success"))
     })
     .catch(err => {
-      console.error(err);
-      res.status(500).json({ error: err });
+		return res.json(apiCode.error(err, "List All Role Fail"))
     });
 };
 
