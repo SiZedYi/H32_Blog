@@ -1,19 +1,19 @@
 const {
-	listUser,
+	listUsers,
 	getUserRoles,
-	listRole,
+	listRoles,
 	getAllUserInRole,
 } = require('../controllers/userController');
 
 const router = require('express').Router();
 
 //User
-router.get('/listUser', listUser);
-router.get('/listUser/:userID/roles', getUserRoles);
+router.get('/listUsers', listUsers);
+router.get('/listUsers/:userID/roles', getUserRoles);
 
 //Role
-router.get('/listRole',listRole);
-router.get('/listRole/:roleID',getAllUserInRole);
+router.get('/listRoles',listRoles);
+router.get('/listRoles/:roleID',getAllUserInRole);
 
 
 
