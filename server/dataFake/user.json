@@ -37,5 +37,18 @@
     "insLink": "https://www.facebook.com/profile.php?id=100072817196632",
     "faceLink": "https://www.facebook.com/profile.php?id=100072817196632",
     "major":null
-  }
+  },
+	{
+		"userID": 4,
+    "accountName": "ngogiaphat0802",
+    "passWord": "ngogiaphat0802@",
+    "birthdayDatetime": "08/02/2003",
+    "address": "12 Nguy\u1ec5n V\u0103n B\u1ea3o, Ph\u01b0\u1eddng 4, G\u00f2 V\u1ea5p, Th\u00e0nh ph\u1ed1 H\u1ed3 Ch\u00ed Minh",
+    "phoneNumber": "0933528678",
+    "email": "ngogiaphat0802@gmail.com",
+    "about": "test 2k1",
+    "insLink": "",
+    "faceLink": "https://www.facebook.com/SAOAGGO",
+    "major":null
+	}
 ]
