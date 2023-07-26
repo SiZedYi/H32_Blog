@@ -3,7 +3,8 @@ const { User, UserRole, UserUserRole } = require('../models/user')
 const sequelize = require('../config/sequelize/index');
 
 // Khởi tạo apicode để quy về 1 định dạng api duy nhất
-const ApiCode = require('../utils/apicode')
+const ApiCode = require('../utils/apicode');
+const { Op } = require('sequelize');
 const apiCode = new ApiCode()
 
 // list user api
@@ -19,10 +20,48 @@ const listUsers = (req, res) => {
     });
 };
 
-// search user theo 1 tiêu chí nào đó (tên, khóa ...)
+// search user theo 1 tiêu chí nào đó (tên...)
+const searchUser = (req, res) => {
+	const {n: name, y: academicYear, m: major}= req.query;
+	// 'fullName', 'academicYear',
+	User.findAll({
+		attributes: ['accountName','major'],
+		where: {
+			[Op.or]: [
+				{accountName: {
+					[Op.like]: `%${name}%`
+				}},
+				// {academicYear: {
+				// 	[Op.like]: `%${academicYear}%`
+				// }},
+				{major: {
+					[Op.like]: `%${major}%`
+				}},
+			]
+
+		}
+	})
+	.then(searchResult => {
+		return res.json(apiCode.success(searchResult, "List All User Success"))
+	  })
+	.catch(err => {
+		return res.json(apiCode.error(err, "List All User Fail"))
+	});
+}
+
 // get thông tin của 1 userID
-
-
+const getUserInfo = (req, res) => {
+	const userID = req.params.userID;
+	User.findByPk( userID, {
+		attributes: { exclude: ['passWord'] } // Loại bỏ trường "password" trong kết quả trả về
+	  })
+	.then(userInfo => {
+		return res.json(apiCode.success(userInfo, `Get User Info Success`))
+	})
+	.catch(err => {
+		return res.json(apiCode.error(err, "Get User Info Fail"))
+    });
+}
 
 //list roles của 1 userID
 const getUserRoles = (req, res) => {
@@ -74,6 +113,8 @@ const getAllUserInRole = (req, res) => {
 
 module.exports = {
 	listUsers,
+	searchUser,
+	getUserInfo,
 	getUserRoles,
 	listRoles,
 	getAllUserInRole,
