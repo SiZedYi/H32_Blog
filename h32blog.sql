@@ -5,16 +5,12 @@ USE H32_BLOG;
 CREATE TABLE USER (
 	userID INT PRIMARY KEY AUTO_INCREMENT,
 	accountName VARCHAR(50) NOT NULL UNIQUE,
-    passWord  VARCHAR(50) NOT NULL,
-    birthdayDatetime  DATETIME  DEFAULT CURRENT_TIMESTAMP,
-	address NVARCHAR(100) DEFAULT 'H32_LAB',
-    phoneNumber VARCHAR(50) NOT NULL UNIQUE,
-    email VARCHAR(50) NOT NULL UNIQUE,
-    about VARCHAR(500) NOT NULL UNIQUE,
-    insLink TEXT,
-    faceLink TEXT,
-    major
-    currentJob NVARCHAR(50),
+    passWord VARCHAR(50) NOT NULL,
+    fullName VARCHAR(50) NOT NULL,
+    academicYear  INT,
+    about TEXT,
+    major NVARCHAR(50),
+    currentJob NVARCHAR(50)
 );
 
 CREATE TABLE USERROLE (
