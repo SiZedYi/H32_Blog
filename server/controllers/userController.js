@@ -1,4 +1,3 @@
-// const mysql = require('mysql')
 const db = require('../config/sequelize/index')
 const { User, UserRole, UserUserRole } = require('../models/user')
 const sequelize = require('../config/sequelize/index');
@@ -20,7 +19,10 @@ const listUsers = (req, res) => {
     });
 };
 
-//get
+// search user theo 1 tiêu chí nào đó (tên, khóa ...)
+// get thông tin của 1 userID
+
+
 
 //list roles của 1 userID
 const getUserRoles = (req, res) => {
