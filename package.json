@@ -9,6 +9,24 @@
     "build": "webpack --config webpack/webpack.config.js --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "lint",
+    "jscs",
+    "style",
+    "verify",
+    "eslint",
+    "jshint",
+    "enforce",
+    "standard",
+    "eslintconfig",
+    "style linter",
+    "style checker",
+    "standard style",
+    "JavaScript Standard Style"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
