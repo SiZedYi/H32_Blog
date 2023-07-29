@@ -1,14 +1,14 @@
 [
-	{
-		"userRoleID": "abc",
-		"userRoleNote": "admin",
-		"active": 1,
-		"createByUserID": 1
-	},
-	{
-		"userRoleID": "bcd",
-		"userRoleNote": "member",
-		"active": 1,
-		"createByUserID": 1
-	}
+  {
+    "userRoleID": "abc",
+    "userRoleNote": "admin",
+    "active": 1,
+    "createByUserID": 1
+  },
+  {
+    "userRoleID": "bcd",
+    "userRoleNote": "member",
+    "active": 1,
+    "createByUserID": 1
+  }
 ]

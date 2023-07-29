@@ -1,12 +1,11 @@
-class ApiCode
-{
-    success( data ,message) {
-        return ({"message":message, "data":data});
-    }
+class ApiCode {
+  success(data, message) {
+    return { message: message, data: data };
+  }
 
-    error(err, message) {
-        return ({"err":err, "message":message})
-    }
+  error(err, message) {
+    return { err: err, message: message };
+  }
 }
 
-module.exports = ApiCode
+module.exports = ApiCode;

@@ -36,10 +36,10 @@
     "about": "test 2k1",
     "insLink": "https://www.facebook.com/profile.php?id=100072817196632",
     "faceLink": "https://www.facebook.com/profile.php?id=100072817196632",
-    "major":null
+    "major": null
   },
-	{
-		"userID": 4,
+  {
+    "userID": 4,
     "accountName": "ngogiaphat0802",
     "passWord": "ngogiaphat0802@",
     "birthdayDatetime": "08/02/2003",
@@ -49,6 +49,6 @@
     "about": "test 2k1",
     "insLink": "",
     "faceLink": "https://www.facebook.com/SAOAGGO",
-    "major":null
-	}
+    "major": null
+  }
 ]
