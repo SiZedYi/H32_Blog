@@ -10,5 +10,11 @@
   "requirePragma": false,
   "trailingComma": "all",
   "quoteProps": "as-needed",
-  "htmlWhitespaceSensitivity": "css, html, js"
+  "htmlWhitespaceSensitivity": "css, html, js",
+  "overrides": [{
+    "files": ".prettierrc.json",
+    "options": {
+      "parser": "json"
+    }
+  }]
 }

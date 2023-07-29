@@ -21,7 +21,9 @@
     "standard",
     "eslint:recommended",
     "next/core-web-vitals",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "./node_modules/coding-standard/.eslintrc-es6",
+    "./node_modules/coding-standard/eslintDefaults.js"
   ],
   "eslintConfig": {
     "env": {
