@@ -1,0 +1,5 @@
+**/.hg
+**/.git
+**/.svn
+**/user.sql
+**/node_modules

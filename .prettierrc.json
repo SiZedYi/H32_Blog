@@ -4,12 +4,10 @@
   "useTabs": true,
   "printWidth": 100,
   "singleQuote": true,
-  "proseWrap": "always",
   "insertPragma": false,
   "bracketSpacing": true,
   "requirePragma": false,
   "trailingComma": "all",
-  "quoteProps": "as-needed",
   "htmlWhitespaceSensitivity": "css, html, js",
   "overrides": [{
     "files": ".prettierrc.json",
