@@ -8,7 +8,7 @@ indent_style = space
 insert_final_newline = false
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,py}]
+[*.{js, py}]
 charset = utf-8
 # Tab indentation (no size specified)
 [Makefile]
@@ -18,7 +18,9 @@ indent_style = tab
 indent_style = space
 indent_size = 2
 # Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml}]
+[{
+    package.json, package-lock.json, .eslintrc.json, .prettierrc.json, .travis.yml, LICENSE, VERSION, 
+}]
 indent_style = space
 indent_size = 2
 # JSON files
