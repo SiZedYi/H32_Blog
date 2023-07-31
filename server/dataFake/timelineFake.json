@@ -1,46 +1,61 @@
-
 [
-	"Các sự kiện tiêu của H3.2 Lab từ 2011 - 2023:",
-	{
-		"Tên sự kiện": "OLP - ACM/ICPC Asia Cần Thơ 2011",
-		"Năm diễn ra": "2011",
-		"Chi tiết": {
-			"Thời gian": "Thứ a, ngày bc tháng de năm 2011",
-			"Địa điểm đăng cai": "ĐH Cần Thơ - CTU",
-			"Mô tả": "Mô tả sự kiện 1",
-			"Hình ảnh tiêu biểu": "img/1.jpg",
-			"Giải thưởng tiêu biểu": {
-				"Giải nhất": "IUH",
-				"Giải nhì": "CTU"
-			}
-		}
-	},
-	{
-		"Tên sự kiện": "OLP - ACM/ICPC Asia Nha Trang 2016",
-		"Năm diễn ra": "2016",
-		"Chi tiết": {
-			"Thời gian": "Thứ a, ngày bc tháng de năm 2016",
-			"Địa điểm đăng cai": "ĐH Nha Trang - NTU",
-			"Mô tả": "Mô tả sự kiện 2",
-			"Hình ảnh tiêu biểu": "img/2.jpg",
-			"Giải thưởng tiêu biểu": {
-				"Giải nhất": "IUH",
-				"Giải nhì": "NTU"
-			}
-		}
-	},
-	{
-		"Tên sự kiện": "OLP - ACM/ICPC Hồ Chí Minh 2022",
-		"Năm diễn ra": "2022",
-		"Chi tiết": {
-			"Thời gian": "Thứ a, ngày bc tháng de năm 2022",
-			"Địa điểm đăng cai": "ĐH Sư phạm Kỹ thuật TP.HCM - HCMUTE",
-			"Mô tả": "Mô tả sự kiện 3",
-			"Hình ảnh tiêu biểu": "img/3.jpg",
-			"Giải thưởng tiêu biểu": {
-				"Giải nhất": "IUH",
-				"Giải nhì": "HCMUTE"
-			}
-		}
-	}
+  {
+    "timeLineID": {
+      "type": 1,
+      "primaryKey": true,
+      "autoIncrement": true
+    },
+    "name": {
+      "type": "OLP - ACM/ICPC Asia Cần Thơ 2011 tại CTU",
+      "allowNull": false
+    },
+    "tag": {
+      "type": "",
+      "allowNull": false
+    },
+    "description": {
+      "type": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+      "allowNull": false
+    },
+    "year": {
+      "type": "2011",
+      "defaultValue": "DataTypes.NOW"
+    },
+    "title": {
+      "type": "OLP - ACM/ICPC Asia Cần Thơ 2011",
+      "allowNull": false
+    }
+  },
+  {
+    "timeLineID": {
+      "type": 2,
+      "primaryKey": true,
+      "autoIncrement": true
+    },
+    "name": {
+      "type": "OLP - ACM/ICPC Asia Hồ Chính Minh 2017 tại HCMUE",
+      "allowNull": false
+    },
+    "tag": {
+      "type": "",
+      "allowNull": false
+    },
+    "description": {
+      "type": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+      "allowNull": false
+    },
+    "year": {
+      "type": "2016",
+      "defaultValue": "DataTypes.NOW"
+    },
+    "title": {
+      "type": "OLP - ACM/ICPC Asia Hồ Chính Minh 2017",
+      "allowNull": false
+    }
+  },
+  {
+    "modelName": "TimeLine",
+    "tableName": "TimeLine",
+    "timestamps": false
+  }
 ]
