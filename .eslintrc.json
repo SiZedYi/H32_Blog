@@ -2,14 +2,22 @@
   "version": "0.0.1",
   "name": "H32_Blog",
   "parser": "babel-eslint",
+  "symbol-description": "error",
+  "globals": {
+    "document": "readonly"
+  },
   "plugins": [
+    "n",
+    "import",
+    "promise",
     "prettier"
   ],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": "latest",
     "ecmaFeatures": {
-      "js": true
+      "js": true,
+      "jsx": true
     }
   },
   "eslintConfig": {
@@ -19,29 +27,49 @@
       "es2021": true,
       "browser": true
     },
-  "extends": [
-    "airbnb",
-    "standard",
-    "eslint:recommended",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended",
-    "./node_modules/coding-standard/.eslintrc-es6",
-    "./node_modules/coding-standard/eslintDefaults.js"
-  ],
+    "extends": [
+      "airbnb",
+      "standard",
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "plugin:prettier/recommended",
+      "./node_modules/coding-standard/.eslintrc-es6",
+      "./node_modules/coding-standard/eslintDefaults.js"
+    ],
     "rules": {
       "semi":0,
       "no-plusplus": "off",
       "no-restricted-globals": "off",
       "@javascript-eslint/semi": "",
       "@typescript-eslint/semi": "warn",
+      "arrow-spacing": [
+        "error", { 
+          "before": true, 
+          "after": true 
+        }
+      ],
+      "comma-spacing": [
+        "error", { 
+          "before": false, 
+          "after": true 
+        }
+      ],
       "prettier/prettier": [
-        "error",
-        // configure Prettier for ESLint
-        {
+        "error", { // configure Prettier for ESLint
           "printWidth": 100,
           "singleQuote": true,
           "trailingComma": "all",
           "arrowParens": "avoid"
+        }
+      ],
+      "no-mixed-operators": [
+        "error", {
+          "groups": [
+            ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+            ["&&", "||"],
+            ["in", "instanceof"]
+          ],
+          "allowSamePrecedence": true
         }
       ]
     }
