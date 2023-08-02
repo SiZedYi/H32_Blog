@@ -44,5 +44,5 @@ VALUE
 (42, "caohuynhvothanh2901", "passnhucu", "Cao Huỳnh Võ Thanh", 2022, "OLP - ACM/ICPC National Contest 2022 tại IUH; Designer + Data Collection Dự án Landing Page H3.2 Lab", "khoa học máy tính", NULL),
 (43, "nguyentandat1101", "passnhucu", "Nguyễn Tấn Đắt", 2022, "Designer + Data Collection Dự án Landing Page H3.2 Lab", "kỹ thuật phần mềm", NULL),
 (44, "doanvuthienban602", "passnhucu", "Đoàn Vũ Thiên Ban", 2022, "OLP - ACM/ICPC National Contest 2022 tại IUH; OLP - ACM/ICPC Asia Hồ Chí Minh 2022 tại HCMUTE", "khoa học dữ liệu", NULL),
-(45, "trinhnguyenhoangvu306", "passnhucu", "Trịnh Nguyễn Hoàng Vũ", 2022, "OLP - ACM/ICPC National Contest 2022 tại IUH; OLP - ACM/ICPC Asia Hồ Chí Minh 2022 tại HCMUTE", "khoa học dữ liệu", NULL)
+(45, "trinhnguyenhoangvu306", "passnhucu", "Trịnh Nguyễn Hoàng Vũ", 2022, "OLP - ACM/ICPC National Contest 2022 tại IUH; OLP - ACM/ICPC Asia Hồ Chí Minh 2022 tại HCMUTE", "khoa học dữ liệu", NULL),
 (46, "dothanhminhphu241", "passnhucu", "Đỗ Thành Minh Phú", 2022, "OLP - ACM/ICPC National Contest 2022 tại IUH; OLP - ACM/ICPC Asia Hồ Chí Minh 2022 tại HCMUTE", "khoa học máy tính", NULL)
