@@ -1,28 +1,47 @@
-# EditorConfig is awesome: https://EditorConfig.org
-# top-most EditorConfig file
+# Version: 4.1.1 (Using https://semver.org/)
+# Updated: 2022-05-23
+# See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
+# See https://github.com/RehanSaeed/EditorConfig for updates to this file.
+# See http://EditorConfig.org for more information about .editorconfig files.
+##########################################
+# Common Settings
+##########################################
+# This file is the top-most EditorConfig file
 root = true
-# Unix-style newlines with a newline ending every file
 [*]
+indent_size = 4
 end_of_line = crlf
 indent_style = space
 insert_final_newline = false
+trim_trailing_whitespace = true
+# Matches the exact files either package.json or .travis.yml
+[{
+    package.json, package-lock.json, .eslintrc.json, .prettierrc.json, .travis.yml, LICENSE, VERSION,
+}]
 # Matches multiple files with brace expansion notation
 # Set default charset
 [*.{js, py}]
 charset = utf-8
+indent_size = 4
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
 # Tab indentation (no size specified)
 [Makefile]
-indent_style = tab
+indent_style = space
 # Indentation override for all JS under lib directory
 [lib/**.js]
+indent_size = 4
+end_of_line = crlf
 indent_style = space
-indent_size = 2
-# Matches the exact files either package.json or .travis.yml
-[{
-    package.json, package-lock.json, .eslintrc.json, .prettierrc.json, .travis.yml, LICENSE, VERSION, 
-}]
+insert_final_newline = false
+indent_size = 4
+end_of_line = crlf
 indent_style = space
-indent_size = 2
-# JSON files
-[*.json]
-indent_size = 2
+insert_final_newline = false
+# JSON Files
+[*.{json, json5, webmanifest}]
+indent_size = 4
+end_of_line = crlf
+indent_style = space
+insert_final_newline = false
