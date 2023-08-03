@@ -1,61 +1,34 @@
 [
   {
-    "timeLineID": {
-      "type": 1,
-      "primaryKey": true,
-      "autoIncrement": true
-    },
-    "name": {
-      "type": "OLP - ACM/ICPC Asia Cần Thơ 2011 tại CTU",
-      "allowNull": false
-    },
-    "tag": {
-      "type": "",
-      "allowNull": false
-    },
-    "description": {
-      "type": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
-      "allowNull": false
-    },
-    "year": {
-      "type": "2011",
-      "defaultValue": "DataTypes.NOW"
-    },
-    "title": {
-      "type": "OLP - ACM/ICPC Asia Cần Thơ 2011",
-      "allowNull": false
-    }
+    "timeLineID": 1,
+    "name": "OLP - ACM/ICPC Asia Cần Thơ 2011 tại CTU",
+    "tag": null,
+    "description": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+    "year": 2011,
+    "title":"OLP - ACM/ICPC Asia Cần Thơ 2011"
   },
   {
-    "timeLineID": {
-      "type": 2,
-      "primaryKey": true,
-      "autoIncrement": true
-    },
-    "name": {
-      "type": "OLP - ACM/ICPC Asia Hồ Chính Minh 2017 tại HCMUE",
-      "allowNull": false
-    },
-    "tag": {
-      "type": "",
-      "allowNull": false
-    },
-    "description": {
-      "type": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
-      "allowNull": false
-    },
-    "year": {
-      "type": "2016",
-      "defaultValue": "DataTypes.NOW"
-    },
-    "title": {
-      "type": "OLP - ACM/ICPC Asia Hồ Chính Minh 2017",
-      "allowNull": false
-    }
+    "timeLineID": 2,
+    "name":"OLP - ACM/ICPC Asia Hồ Chính Minh 2017 tại HCMUE",
+    "tag": null,
+    "description": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+    "year":2016,
+    "title": "OLP - ACM/ICPC Asia Hồ Chính Minh 2017"
   },
   {
-    "modelName": "TimeLine",
-    "tableName": "TimeLine",
-    "timestamps": false
+    "timeLineID": 3,
+    "name":"OLP - ACM/ICPC Asia Hà Nội 2018 tại PTIT",
+    "tag": null,
+    "description": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+    "year":2017,
+    "title": "OLP - ACM/ICPC Asia Hà Nội"
+  },
+  {
+    "timeLineID": 2,
+    "name":"OLP - ACM/ICPC Asia Cần Thơ 2019 tại CTU",
+    "tag": null,
+    "description": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+    "year":2018,
+    "title": "OLP - ACM/ICPC Asia Cần Thơ 2019"
   }
 ]
