@@ -48,7 +48,7 @@ CREATE TABLE LabImage (
 CREATE TABLE TimeLine (
 	timeLineID INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    tag VARCHAR(50) NOT NULL,
+    tag VARCHAR(50),
     description TEXT NOT NULL,
     year INT DEFAULT '2',
     title TEXT NOT NULL
