@@ -50,4 +50,7 @@ VALUE
 ("Img_48",48,"a"),
 ("Img_49",49,"a"),
 ("Img_50",50,"https://i.imgur.com/5X2LE2B.jpg"),
-("Img_51",51,"https://i.imgur.com/566D0Di.jpg")
+("Img_51",51,"https://i.imgur.com/566D0Di.jpg"),
+("Img_52",52,"a"),
+("Img_53",53,"a"),
+("Img_54",54,"a")
