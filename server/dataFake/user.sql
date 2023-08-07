@@ -53,3 +53,4 @@ VALUE
 (51, "dothanhminhphu241", "passnhucu", "Đỗ Thành Minh Phú", 2022, "The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH", "khoa học máy tính", NULL),
 (52, "nguyentruongan369", "passnhucu", "Nguyễn Trường An", 2021, "Tham gia training cho Đội tuyển OLP - ACM/ICPC của Lab; The OLP - ACM/ICPC Viet Nam National Contest 2021 tại IUH; The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH", "khoa học dữ liệu", NULL),
 (53, "nguyenminhluan111", "passnhucu", "Nguyễn Minh Luận", 2020, "Tham gia training cho Đội tuyển OLP - ACM/ICPC của Lab; The OLP - ACM/ICPC Viet Nam National Contest 2021 tại IUH; The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH", "kỹ thuật phần mềm", NULL),
+(53, "vophuochau013", "passnhucu", "Võ Phước Hậu", 2021, "Tham gia training cho Đội tuyển OLP - ACM/ICPC của Lab; The OLP - ACM/ICPC Viet Nam National Contest 2021 tại IUH; The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH", "kỹ thuật phần mềm", NULL),
