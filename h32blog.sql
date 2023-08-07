@@ -49,7 +49,7 @@ CREATE TABLE TimeLine (
 	timeLineID INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
     tag VARCHAR(50) NOT NULL,
-    description NVARCHAR(200) NOT NULL,
+    description TEXT NOT NULL,
     year INT DEFAULT '2',
-    title NVARCHAR(50) NOT NULL
+    title TEXT NOT NULL
 );
