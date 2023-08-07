@@ -47,7 +47,7 @@ VALUE
 (45, "phamthemanh452", "passnhucu", "Phạm Thế Mạnh", 2021, "Tham gia training cho Đội tuyển OLP - ACM/ICPC của Lab; The OLP - ACM/ICPC Viet Nam National Contest 2021 tại IUH; The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH", "kỹ thuật phần mềm", NULL),
 (46, "nguyenhuynhdankhanh3103", "passnhucu", "Nguyễn Huỳnh Đan Khánh", 2022, "The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH; Designer + Data Collection Dự án Landing Page H3.2 Lab; Báo thủ", "khoa học máy tính", NULL),
 (47, "caohuynhvothanh2901", "passnhucu", "Cao Huỳnh Võ Thanh", 2022, "The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH; Designer + Data Collection Dự án Landing Page H3.2 Lab", "khoa học máy tính", NULL),
-(48, "nguyentandat1101", "passnhucu", "Nguyễn Tấn Đắt", 2022, "Designer + Data Collection Dự án Landing Page H3.2 Lab", "kỹ thuật phần mềm", NULL),
+(48, "nguyentandat1101", "passnhucu", "Nguyễn Tấn Đắt", 2022, "Designer + Data Collection + Front End Developer Dự án Landing Page H3.2 Lab", "kỹ thuật phần mềm", NULL),
 (49, "doanvuthienban602", "passnhucu", "Đoàn Vũ Thiên Ban", 2022, "The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH; The ACM/ICPC Asia Ho Chi Minh City Regional Contest 2022 tại HCMUTE", "khoa học dữ liệu", NULL),
 (50, "trinhnguyenhoangvu306", "passnhucu", "Trịnh Nguyễn Hoàng Vũ", 2022, "The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH; The ACM/ICPC Asia Ho Chi Minh City Regional Contest 2022 tại HCMUTE", "khoa học dữ liệu", NULL),
 (51, "dothanhminhphu241", "passnhucu", "Đỗ Thành Minh Phú", 2022, "The OLP - ACM/ICPC Viet Nam National Contest 2022 tại IUH", "khoa học máy tính", NULL),
