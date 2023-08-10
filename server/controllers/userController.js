@@ -9,15 +9,15 @@ const apiCode = new ApiCode();
 
 // list user api
 const listUsers = (req, res) => {
-  User.findAll({
-      attributes: {exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
-    })
-    .then((listUsers) => {
-      return res.json(apiCode.success(listUsers, "List All User Success"));
-    })
-    .catch((err) => {
-      return res.json(apiCode.error(err, "List All User Fail"));
-    });
+User.findAll({
+    attributes: {exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
+  })
+  .then((listUsers) => {
+    return res.json(apiCode.success(listUsers, "List All User Success"));
+  })
+  .catch((err) => {
+    return res.json(apiCode.error(err, "List All User Fail"));
+  });
 };
 
 // search user theo 1 tiêu chí nào đó (tên...)
