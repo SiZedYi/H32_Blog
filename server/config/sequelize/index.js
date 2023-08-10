@@ -1,7 +1,7 @@
 // @ts-nocheck
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("h32_blog", "root", "160503", {
+const sequelize = new Sequelize("h32_blog", "root", "123456", {
   host: process.env.HOST_NAME || "localhost",
   dialect: "mysql",
 });
