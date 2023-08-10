@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes, STRING } = require("sequelize");
 const sequelize = require("../config/sequelize");
 
 class User extends Model {}
@@ -21,32 +21,27 @@ User.init(
       type: DataTypes.STRING(50),
       allowNull: false,
     },
-    birthdayDatetime: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
-    },
-    address: {
-      type: DataTypes.STRING(100),
-      defaultValue: "H32_LAB",
-    },
-    phoneNumber: {
+    fullName: {
       type: DataTypes.STRING(50),
       allowNull: false,
-      unique: true,
     },
-    email: {
-      type: DataTypes.STRING(50),
-      allowNull: false,
-      unique: true,
+    academicYear: {
+      type: DataTypes.INTEGER,
+      defaultValue: null,
     },
     about: {
-      type: DataTypes.STRING(50),
-      allowNull: false,
-      unique: true,
+      type: DataTypes.TEXT,
+      defaultValue: null,
     },
-    insLink: { type: DataTypes.TEXT },
-    faceLink: { type: DataTypes.TEXT },
-    major: { type: DataTypes.STRING(500) },
+    major: {
+      type: DataTypes.STRING(50),
+      defaultValue: null,
+    },
+    currentJob: {
+      type: DataTypes.STRING(50),
+      defaultValue: null,
+    },
+    
   },
   {
     sequelize, // Truyền đối tượng Sequelize đã khởi tạo

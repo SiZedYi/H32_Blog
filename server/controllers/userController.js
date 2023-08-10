@@ -10,8 +10,8 @@ const apiCode = new ApiCode();
 // list user api
 const listUsers = (req, res) => {
   User.findAll({
-    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
-  })
+      attributes: {exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
+    })
     .then((listUsers) => {
       return res.json(apiCode.success(listUsers, "List All User Success"));
     })
