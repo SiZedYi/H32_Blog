@@ -1,3 +1,4 @@
+// @ts-nocheck
 const { Model, DataTypes } = require("sequelize");
 
 class TimeLine extends Model {}
