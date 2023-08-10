@@ -19,7 +19,7 @@ VALUE
 ("Img_17",17,"a"),
 ("Img_18",18,"a"),
 ("Img_19",19,"https://i.imgur.com/IR2xwMM.jpg"),
-("Img_20",20,"https://i.imgur.com/q9fzkuw.png"),
+("Img_20",20,"https://i.imgur.com/q9fzkuw.jpg"),
 ("Img_21",21,"https://i.imgur.com/IuAIkGY.jpg"),
 ("Img_22",22,"https://i.imgur.com/QMT70wR.jpg"),
 ("Img_23",23,"https://i.imgur.com/cOXIF5K.jpg"),
@@ -47,10 +47,10 @@ VALUE
 ("Img_45",45,"https://i.imgur.com/So0GXkx.jpg"),
 ("Img_46",46,"https://i.imgur.com/9ybhFpe.jpg"),
 ("Img_47",47,"https://i.imgur.com/xW22wsq.jpg"),
-("Img_48",48,"a"),
-("Img_49",49,"a"),
+("Img_48",48,"https://i.imgur.com/owvO5ld.jpg"),
+("Img_49",49,"https://i.imgur.com/aGfSARr.jpg"),
 ("Img_50",50,"https://i.imgur.com/5X2LE2B.jpg"),
-("Img_51",51,"https://i.imgur.com/566D0Di.jpg"),
+("Img_51",51,"https://i.imgur.com/JBVrl2t.jpg"),
 ("Img_52",52,"a"),
 ("Img_53",53,"a"),
-("Img_54",54,"a")
+("Img_54",54,"https://i.imgur.com/MTZO1iR.jpg")
