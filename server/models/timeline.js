@@ -1,6 +1,6 @@
 // @ts-nocheck
 const { Model, DataTypes } = require("sequelize");
-
+const sequelize = require("../config/sequelize");
 class TimeLine extends Model {}
 
 TimeLine.init(
@@ -16,18 +16,18 @@ TimeLine.init(
     },
     tag: {
       type: DataTypes.STRING(50),
-      allowNull: false,
+      defaultValue: null,
     },
     description: {
-      type: DataTypes.STRING(200),
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     year: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
+      type: DataTypes.INTEGER,
+      defaultValue: 2,
     },
     title: {
-      type: DataTypes.STRING(50),
+      type: DataTypes.TEXT,
       allowNull: false,
     },
   },
