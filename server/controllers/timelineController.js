@@ -24,7 +24,7 @@ const getYearInfor = (req, res) => {
     const year = req.params.year;
     TimeLine.findOne({
         where: {year: year}, 
-        attributes: { exclude: ["tag"] },
+        attributes: { exclude: ["tag","timeLineID"] },
     })
     .then((YearInfor) => {
         return res.json(apiCode.success(YearInfor, `Get Year Info Success`));
