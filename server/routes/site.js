@@ -7,6 +7,10 @@ const {
   getAllUserInRole,
 } = require("../controllers/userController");
 
+const {
+  listYears,
+  getYearInfor,
+} = require("../controllers/timelineController");
 const router = require("express").Router();
 
 //User
@@ -21,5 +25,6 @@ router.get("/listRoles", listRoles);
 router.get("/listRoles/:roleID", getAllUserInRole);
 
 // Timeline
-
+router.get("/listYears", listYears);
+router.get("/listYears/:year", getYearInfor);
 module.exports = router;
