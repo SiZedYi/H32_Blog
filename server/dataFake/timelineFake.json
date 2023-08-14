@@ -83,8 +83,24 @@
     "timeLineID": 11,
     "name":"OLP - ACM/ICPC Asia Huế 2023 tại HUSC",
     "tag": null,
-    "description": "Đây là 1 mùa giải hết sức khó khăn và đầy cảm xúc, bla bla blac, etc......",
+    "description": "Đang chờ thành tích của năm nay để ghi vô =)))))",
     "year":2023,
-    "title": "OLP - ACM/ICPC Asia Huế 2023"
+    "title": "The 2023 ICPC Asia Hue Regional Conetst"
+  },
+  {
+    "timeLineID": 12,
+    "name":"OLP - ACM/ICPC Asia Hà Nội 2012 tại HaUI",
+    "tag": null,
+    "description": "Đoàn gồm có 15 người: 13 thí sinh và 2 huấn luyện viên. Từ bên phải qua là hai thí sinh nữ hiếm hoi và được ưu ái nhất trong đội. Ngày thi đầu tiên, thi Olympic Tin học. Hình ảnh bạn Nguyễn Thái Hiền (đội mũ trắng), thí sinh đạt Giải Ba cá nhân Olympic Tin học Khối CĐ và Giải Nhì ACM/ICPC Khối Không Chuyên. Từ trái qua là Nguyễn Đình Hà và Nguyễn Trung Hiếu Giải Ba Olympic Tin học Khối Chuyên Tin năm 2011 tại Cần Thơ, dự thi Khối Siêu Cúp năm nay. Các bạn đã hổ trợ rất nhiều về chuyên môn cho các lớp đàn em khóa sau mình trong phong trào Olympic và ACM/ICPC. Lễ tổng kết và trao giải Olympic và ACM/ICPC. Chúc mừng đội IUH.Circle (Nguyễn Minh Phương, Đoàn Phan Quang Minh, Nguyễn Thái Hiền) đã giành được Giải Nhì ACM/ICPC khối Không Chuyên. Chúc mừng Nguyễn Minh Hưng giải ba Olympic Khối Chuyên Tin, Nguyễn Thái Hiền giải ba Khối CĐ, Nguyễn Minh Phương và Đoàn Phan Quang Minh Giải Khuyến Khích Olympic Khối Không Chuyên !",
+    "year":2024,
+    "title": "The OLP - ACM/ICPC 2012 Asia Ha Noi Regional Contest"
+  },
+  {
+    "timeLineID": 13,
+    "name":"OLP - ACM/ICPC Asia Đà Nẵng 2013 tại DTU",
+    "tag": null,
+    "description": "Kỳ thi Olympic Tin học sinh viên toàn quốc lần thứ 22 và kỳ thi lập trình sinh viên quốc tế ACM/ICPC 2013 được tổ chức tại Đà Nẵng. Đội tuyển trường ĐH Công Nghiệp TP.HCM có 18 thí sinh tham dự. Hình ảnh Team IUH.Exia, đại diện của K7 tham gia kì thi này. Đây là đội mạnh của IUH. Các thành viên (từ phải qua trái) Phan Thế Nam, Dương Anh Sơn và Trần Văn Vũ là những thành viên đã có rất nhiều đóng góp cho cho phong trào Olympic của IUH.",
+    "year":2012,
+    "title": "The OLP - ACM/ICPC 2013 Asia Da Nang Regional Contest"
   }
 ]
