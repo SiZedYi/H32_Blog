@@ -10,14 +10,14 @@ const apiCode = new ApiCode();
 // list user api
 const listUsers = (req, res) => {
   User.findAll({
-    attributes: {exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
-  })
-  .then((listUsers) => {
-    return res.json(apiCode.success(listUsers, "List All User Success"));
-  })
-  .catch((err) => {
-    return res.json(apiCode.error(err, "List All User Fail"));
-  });
+      attributes: {exclude: ["passWord", "userID"] }, // Loại bỏ trường "password" trong kết quả trả về
+    })
+    .then((listUsers) => {
+      return res.json(apiCode.success(listUsers, "List All User Success"));
+    })
+    .catch((err) => {
+      return res.json(apiCode.error(err, "List All User Fail"));
+    });
 };
 
 // search user theo 1 tiêu chí nào đó (tên...)
@@ -56,10 +56,12 @@ const searchUser = (req, res) => {
 const getUserInfo = (req, res) => {
   const userID = req.params.userID;
   User.findByPk(userID, {
-    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
+    attributes: { exclude: ["passWord", "userID"] }, // Loại bỏ trường "password" trong kết quả trả về
   })
-    .then((userInfo) => {
-      return res.json(apiCode.success(userInfo, `Get User Info Success`));
+  .then((userInfo) => {
+    userInfo["khoa"] = User.academicYear - 2004;
+    console.log(userInfo.khoa);
+    return res.json(apiCode.success(userInfo, `Get User Info Success`));
     })
     .catch((err) => {
       return res.json(apiCode.error(err, "Get User Info Fail"));
