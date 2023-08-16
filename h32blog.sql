@@ -6,50 +6,50 @@ USE H32_BLOG;
 CREATE TABLE USER (
 	userID INT PRIMARY KEY AUTO_INCREMENT,
 	accountName VARCHAR(50) NOT NULL UNIQUE,
-    passWord VARCHAR(50) NOT NULL,
-    fullName VARCHAR(50) NOT NULL,
-    academicYear  INT,
-    about TEXT,
-    major NVARCHAR(50),
-    currentJob NVARCHAR(50)
+  passWord VARCHAR(50) NOT NULL,
+  fullName VARCHAR(50) NOT NULL,
+  academicYear  INT,
+  about TEXT,
+  major NVARCHAR(50),
+  currentJob NVARCHAR(50)
 );
 
 CREATE TABLE USERROLE (
 	userRoleID VARCHAR(50) PRIMARY KEY,
 	userRoleNote VARCHAR(50),
-    active BOOLEAN NOT NULL,
-    createByUserID INT
+  active BOOLEAN NOT NULL,
+  createByUserID INT
 );
 
 CREATE TABLE USERUSERROLE (
 	userID INT,
-    userRoleID VARCHAR(50),
-    PRIMARY KEY (userID, userRoleID),
-    FOREIGN KEY (userID) REFERENCES USER(userID),
-    FOREIGN KEY (userRoleID) REFERENCES USERROLE(userRoleID)
+  userRoleID VARCHAR(50),
+  PRIMARY KEY (userID, userRoleID),
+  FOREIGN KEY (userID) REFERENCES USER(userID),
+  FOREIGN KEY (userRoleID) REFERENCES USERROLE(userRoleID)
 );
 
 CREATE TABLE IMAGEUSER (
 	imageID VARCHAR(50) PRIMARY KEY,
 	userID INT NOT NULL,
-    imgURL TEXT NOT NULL,
-    FOREIGN KEY (userID) REFERENCES USER(userID)
+  imgURL TEXT NOT NULL,
+  FOREIGN KEY (userID) REFERENCES USER(userID)
 );
 
 CREATE TABLE LabImage (
 	labImageID VARCHAR(50) PRIMARY KEY,
-    userID INT NOT NULL,
-    tag VARCHAR             (50) NOT NULL,
-    description NVARCHAR(100) DEFAULT "img_lab",
-    year INT DEFAULT '1',
-    FOREIGN KEY (userID) REFERENCES USER(userID)
+  userID INT NOT NULL,
+  tag VARCHAR             (50) NOT NULL,
+  description NVARCHAR(100) DEFAULT "img_lab",
+  year INT DEFAULT '1',
+  FOREIGN KEY (userID) REFERENCES USER(userID)
 );
 
 CREATE TABLE TimeLine (
 	timeLineID INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
-    tag VARCHAR(50),
-    description TEXT NOT NULL,
-    year INT DEFAULT '2',
-    title TEXT NOT NULL
+  name VARCHAR(50) NOT NULL,
+  tag VARCHAR(50),
+  description TEXT NOT NULL,
+  year INT DEFAULT '2',
+  title TEXT NOT NULL
 );
