@@ -15,18 +15,18 @@ const router = require("express").Router();
 
 
 //User
-router.get("/list_users", listUsers);
-router.get("/list_users/:userID", getUserInfo);
-router.get("/list_users/:userID/roles", getUserRoles);
+router.get("/list-users", listUsers);
+router.get("/list-users/:userID", getUserInfo);
+router.get("/list-users/:userID/roles", getUserRoles);
 
-router.get("/search_user/", searchUser);
+router.get("/search-user/", searchUser);
 
 //Role
-router.get("/list_roles", listRoles);
-router.get("/list_roles/:roleID", getAllUserInRole);
+router.get("/list-roles", listRoles);
+router.get("/list-roles/:roleID", getAllUserInRole);
 
 // Timeline
-router.get("/list_years", listYears);
-router.get("/list_years/:year", getYearInfor);
+router.get("/list-years", listYears);
+router.get("/list-years/:year", getYearInfor);
 
 module.exports = router;
