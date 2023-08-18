@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/sequelize");
 
 const { User } = require("./user");
 
@@ -47,9 +48,13 @@ LabImage.init(
       defaultValue: "img_lab",
     },
     year: {
-      type: DataTypes.DATE,
-      defaultValue: DataTypes.NOW,
+      type: DataTypes.INTEGER,
+      defaultValue: 1,
     },
+    imgURL: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    }
   },
   {
     sequelize,

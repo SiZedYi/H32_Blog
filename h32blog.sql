@@ -38,11 +38,12 @@ CREATE TABLE IMAGEUSER (
 
 CREATE TABLE LabImage (
 	labImageID VARCHAR(50) PRIMARY KEY,
-  userID INT NOT NULL,
-  tag VARCHAR             (50) NOT NULL,
-  description NVARCHAR(100) DEFAULT "img_lab",
-  year INT DEFAULT '1',
-  FOREIGN KEY (userID) REFERENCES USER(userID)
+    userID INT NOT NULL,
+    tag VARCHAR (50),
+    description NVARCHAR(100) DEFAULT "img_lab",
+    year INT DEFAULT '1',
+    imgURL TEXT NOT NULL,
+    FOREIGN KEY (userID) REFERENCES USER(userID)
 );
 
 CREATE TABLE TimeLine (

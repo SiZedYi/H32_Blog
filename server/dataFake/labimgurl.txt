@@ -1,0 +1,14 @@
+INSERT INTO labimage()
+VALUE
+("labImg_1","NULL","NULL","NULL",2011,"https://i.imgur.com/Yf9eCXi.jpg"),
+("labImg_2","NULL","NULL","NULL",2012,"https://i.imgur.com/qG4UoP6.jpg"),
+("labImg_3","NULL","NULL","NULL",2013,"https://i.imgur.com/cQeEpmF.jpg"),
+("labImg_4","NULL","NULL","NULL",2014,"https://i.imgur.com/iLFB4Ok.jpg"),
+("labImg_5","NULL","NULL","NULL",2015,"https://i.imgur.com/EeOQOwl.jpg"),
+("labImg_6","NULL","NULL","NULL",2016,"https://i.imgur.com/D1HPJLe.jpg"),
+("labImg_7","NULL","NULL","NULL",2017,"https://i.imgur.com/ygHDHua.jpg"),
+("labImg_8","NULL","NULL","NULL",2018,"https://i.imgur.com/XTAWax6.jpg"),
+("labImg_9","NULL","NULL","NULL",2019,"https://i.imgur.com/zUCNkRQ.jpg"),
+("labImg_0","NULL","NULL","NULL",2020,"https://i.imgur.com/gPlYgoT.jpg"),
+("labImg_1","NULL","NULL","NULL",2021,"https://i.imgur.com/XLdX84B.jpg"),
+("labImg_2","NULL","NULL","NULL",2022,"https://i.imgur.com/EzCSXrW.jpg")
