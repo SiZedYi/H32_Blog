@@ -41,6 +41,7 @@ const getYearInfor = (req, res) => {
     }
     const combinedData = {
         ...yearInfo.get(), // Convert Sequelize instance to plain object
+        // @ts-ignore
         imageInfo: imageInfo.imgURL,
     };
     return res.json(apiCode.success(combinedData, "Get Year Info Success"));
