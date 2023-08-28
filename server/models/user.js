@@ -1,6 +1,5 @@
 const { Model, DataTypes, STRING } = require("sequelize");
 const sequelize = require("../config/sequelize");
-
 class User extends Model {}
 class UserRole extends Model {}
 class UserUserRole extends Model {}
@@ -41,10 +40,10 @@ User.init(
       type: DataTypes.STRING(50),
       defaultValue: null,
     },
-    
+
   },
   {
-    sequelize, // Truyền đối tượng Sequelize đã khởi tạo
+    sequelize,
     modelName: "User", // Tên của model
     tableName: "USER", // Tên của bảng trong cơ sở dữ liệu
     timestamps: false, // Không sử dụng timestamps (createdAt và updatedAt)

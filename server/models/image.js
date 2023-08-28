@@ -20,6 +20,10 @@ ImageUser.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    imgUnBgURL: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
   },
   {
     sequelize,
