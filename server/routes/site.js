@@ -13,18 +13,20 @@ const {
 } = require("../controllers/timelineController");
 const router = require("express").Router();
 
-//User
-router.get("/listUsers", listUsers);
-router.get("/listUsers/:userID", getUserInfo);
-router.get("/listUsers/:userID/roles", getUserRoles);
 
-router.get("/searchUser/", searchUser);
+//User
+router.get("/list-users", listUsers);
+router.get("/list-users/:userID", getUserInfo);
+router.get("/list-users/:userID/roles", getUserRoles);
+
+router.get("/search-user/", searchUser);
 
 //Role
-router.get("/listRoles", listRoles);
-router.get("/listRoles/:roleID", getAllUserInRole);
+router.get("/list-roles", listRoles);
+router.get("/list-roles/:roleID", getAllUserInRole);
 
 // Timeline
-router.get("/listYears", listYears);
-router.get("/listYears/:year", getYearInfor);
+router.get("/list-years", listYears);
+router.get("/list-years/:year", getYearInfor);
+
 module.exports = router;
