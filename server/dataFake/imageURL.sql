@@ -1,4 +1,4 @@
-insert INTO imageuser(,"https://cdn-icons-png.flaticon.com/512/4404/4404257.png")
+insert INTO imageuser()
 VALUE
 ("Img_1",1,"https://i.imgur.com/eeC5ASD.jpg","https://i.imgur.com/gNxm3B7.png"),
 ("Img_2",2,"a","https://cdn-icons-png.flaticon.com/512/4404/4404257.png"),

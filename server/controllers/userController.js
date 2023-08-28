@@ -21,8 +21,8 @@ const listUsers = (req, res) => {
         model: ImageUser,
         attributes: ["imgUnBgURL"], // Chọn thuộc tính bạn muốn hiển thị
         where: {
-          imgURL: {
-            [Op.ne]: 'a', // Loại bỏ các imgURL bằng 'a'
+          imgUnBgURL: {
+            [Op.ne]: 'a', // Loại bỏ các imgUnBgURL bằng 'a'
           },
       },
     }
@@ -78,7 +78,7 @@ const getUserInfo = (req, res) => {
     include: [
         {
           model: ImageUser,
-          attributes: ["imgURL"], // Chọn thuộc tính bạn muốn hiển thị
+          attributes: ["imgUnBgURL"], // Chọn thuộc tính bạn muốn hiển thị
         },
       ]
   })
