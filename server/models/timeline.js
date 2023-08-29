@@ -33,7 +33,7 @@ TimeLine.init(
   {
     sequelize,
     modelName: "TimeLine",
-    tableName: "TimeLine",
+    tableName: "timeline",
     timestamps: false,
   },
 );
