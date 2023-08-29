@@ -1,8 +1,8 @@
-drop database h32_blog;
+-- drop database h32_blog;
 SHOW DATABASES;
 CREATE DATABASE h32_blog;
 SHOW DATABASES;
-USE H32_BLOG;
+USE h32_blog;
 CREATE TABLE USER (
 	userID INT PRIMARY KEY AUTO_INCREMENT,
 	accountName VARCHAR(50) NOT NULL UNIQUE,
