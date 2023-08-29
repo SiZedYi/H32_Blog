@@ -12,10 +12,10 @@ const apiCode = new ApiCode();
 const pagination = require('../utils/pagination');
 // list user api
 const listUsers = (req, res) => {
-  const page = req.query.page || 1;
-  const itemsPerPage = 28;
+  // const page = req.query.page || 1;
+  // const itemsPerPage = 28;
   const getUsers = User.findAll({
-    attributes: ["userID","accountName"],
+    attributes: ["userID"],
     include: [
       {
         model: ImageUser,
@@ -30,8 +30,8 @@ const listUsers = (req, res) => {
   })
   getUsers
     .then(listUsers => {
-      const paginatedResult = pagination.paginate(listUsers, page, itemsPerPage);
-      return res.json(apiCode.success(paginatedResult, "List All User Success"));
+      // const paginatedResult = pagination.paginate(listUsers, page, itemsPerPage);
+      return res.json(apiCode.success(listUsers, "List All User Success"));
     })
     .catch(err => {
       return res.json(apiCode.error(err, "List All User Fail"));
@@ -74,7 +74,7 @@ const searchUser = (req, res) => {
 const getUserInfo = (req, res) => {
   const userID = req.params.userID;
   User.findByPk(userID, {
-    attributes: { exclude: ["passWord", "userID"] }, // Loại bỏ trường "password" trong kết quả trả về
+    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
     include: [
         {
           model: ImageUser,
