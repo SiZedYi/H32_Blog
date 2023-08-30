@@ -45,7 +45,7 @@ User.init(
   {
     sequelize,
     modelName: "User", // Tên của model
-    tableName: "USER", // Tên của bảng trong cơ sở dữ liệu
+    tableName: "user", // Tên của bảng trong cơ sở dữ liệu
     timestamps: false, // Không sử dụng timestamps (createdAt và updatedAt)
   },
 );
@@ -70,7 +70,7 @@ UserRole.init(
   {
     sequelize,
     modelName: "UserRole",
-    tableName: "USERROLE",
+    tableName: "userrole",
     timestamps: false,
   },
 );
@@ -89,7 +89,7 @@ UserUserRole.init(
   {
     sequelize,
     modelName: "UserUserRole",
-    tableName: "USERUSERROLE",
+    tableName: "useruserrole",
     timestamps: false,
   },
 );

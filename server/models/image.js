@@ -28,7 +28,7 @@ ImageUser.init(
   {
     sequelize,
     modelName: "ImageUser",
-    tableName: "IMAGEUSER",
+    tableName: "imageuser",
     timestamps: false,
   },
 );
@@ -63,7 +63,7 @@ LabImage.init(
   {
     sequelize,
     modelName: "LabImage",
-    tableName: "LabImage",
+    tableName: "labimage",
     timestamps: false,
   },
 );

@@ -3,7 +3,6 @@
 
 var mysql = require("mysql2");
 var fs = require("fs");
-var readline = require("readline");
 require('dotenv').config();
 var myCon = mysql.createConnection({
   host: process.env.HOST_NAME || "localhost",
