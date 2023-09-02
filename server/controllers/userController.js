@@ -16,6 +16,7 @@ const listUsers = (req, res) => {
   // const itemsPerPage = 28;
   const getUsers = User.findAll({
     attributes: ["userID"],
+    order:[["userID"]],
     include: [
       {
         model: ImageUser,
