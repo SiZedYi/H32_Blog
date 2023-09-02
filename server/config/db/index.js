@@ -6,7 +6,7 @@ var fs = require("fs");
 require('dotenv').config();
 var myCon = mysql.createConnection({
   host: process.env.HOST_NAME || "localhost",
-  port: process.env.PORT || "3306",
+  port: process.env.PORT || "3200",
   //  database: process.env.DB_NAME || 'h32_blog',
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASSWORD || "123456",
