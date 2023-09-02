@@ -6,7 +6,7 @@ const app = express();
 const cors = require('cors');
 const port = process.env.PORT || 3000;
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'http://103.176.146.142:3000',
   optionsSuccessStatus: 200, // Mã trạng thái thành công
 };
 
