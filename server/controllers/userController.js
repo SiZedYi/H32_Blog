@@ -38,6 +38,29 @@ const listUsers = (req, res) => {
     });
 };
 
+// get thông tin của 1 userID
+const getUserInfo = (req, res) => {
+  const userID = req.params.userID;
+  User.findByPk(userID, {
+    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
+    include: [
+        {
+          model: ImageUser,
+          attributes: ["imgUnBgURL"], // Chọn thuộc tính bạn muốn hiển thị
+        },
+      ]
+  })
+  .then((userInfo) => {
+    userInfo.dataValues.countedYear = userInfo.academicYear - 2004;
+    console.log(userInfo.countedYear);
+
+    return res.json(apiCode.success(userInfo, `Get User Info Success`));
+    })
+    .catch((err) => {
+      return res.json(apiCode.error(err, "Get User Info Fail"));
+    });
+};
+
 // search user theo 1 tiêu chí nào đó (tên...)
 const searchUser = (req, res) => {
   const { n: name, y: academicYear, m: major } = req.query;
@@ -67,28 +90,6 @@ const searchUser = (req, res) => {
     })
     .catch((err) => {
       return res.json(apiCode.error(err, "List All User Fail"));
-    });
-};
-
-// get thông tin của 1 userID
-const getUserInfo = (req, res) => {
-  const userID = req.params.userID;
-  User.findByPk(userID, {
-    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
-    include: [
-        {
-          model: ImageUser,
-          attributes: ["imgUnBgURL"], // Chọn thuộc tính bạn muốn hiển thị
-        },
-      ]
-  })
-  .then((userInfo) => {
-    userInfo["khoa"] = User.academicYear - 2004;
-    console.log(userInfo.khoa);
-    return res.json(apiCode.success(userInfo, `Get User Info Success`));
-    })
-    .catch((err) => {
-      return res.json(apiCode.error(err, "Get User Info Fail"));
     });
 };
 
