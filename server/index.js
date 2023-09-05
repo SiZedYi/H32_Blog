@@ -5,12 +5,12 @@ const router = require("./routes");
 const app = express();
 const cors = require('cors');
 const port = process.env.PORT || 3000;
-const corsOptions = {
-  origin: 'http://103.176.146.142:3000',
-  optionsSuccessStatus: 200, // Mã trạng thái thành công
-};
+//#const corsOptions = {
+ // origin: ],
+ // optionsSuccessStatus: 200, // Mã trạng thái thành công
+//};
 
-app.use(cors(corsOptions)); // Sử dụng cors middleware ở đầu ứng dụng
+app.use(cors()); // Sử dụng cors middleware ở đầu ứng dụng
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
