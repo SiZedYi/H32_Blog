@@ -16,6 +16,7 @@ const listUsers = (req, res) => {
   // const itemsPerPage = 28;
   const getUsers = User.findAll({
     attributes: ["userID"],
+    order:[["userID"]],
     include: [
       {
         model: ImageUser,
@@ -35,6 +36,33 @@ const listUsers = (req, res) => {
     })
     .catch(err => {
       return res.json(apiCode.error(err, "List All User Fail"));
+    });
+};
+
+// get thông tin của 1 userID
+const getUserInfo = (req, res) => {
+  const userID = req.params.userID;
+  User.findByPk(userID, {
+    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
+    include: [
+        {
+          model: ImageUser,
+          attributes: ["imgUnBgURL"], // Chọn thuộc tính bạn muốn hiển thị
+        },
+      ]
+  })
+  .then((userInfo) => {
+    userInfo.dataValues.countedYear = userInfo.academicYear - 2004;
+    if (!userInfo.currentJob) {
+      userInfo.currentJob = "Sinh viên Đại học Công Nghiệp TPHCM "
+    }
+
+    console.log(userInfo.countedYear);
+
+    return res.json(apiCode.success(userInfo, `Get User Info Success`));
+    })
+    .catch((err) => {
+      return res.json(apiCode.error(err, "Get User Info Fail"));
     });
 };
 
@@ -67,28 +95,6 @@ const searchUser = (req, res) => {
     })
     .catch((err) => {
       return res.json(apiCode.error(err, "List All User Fail"));
-    });
-};
-
-// get thông tin của 1 userID
-const getUserInfo = (req, res) => {
-  const userID = req.params.userID;
-  User.findByPk(userID, {
-    attributes: { exclude: ["passWord"] }, // Loại bỏ trường "password" trong kết quả trả về
-    include: [
-        {
-          model: ImageUser,
-          attributes: ["imgUnBgURL"], // Chọn thuộc tính bạn muốn hiển thị
-        },
-      ]
-  })
-  .then((userInfo) => {
-    userInfo["khoa"] = User.academicYear - 2004;
-    console.log(userInfo.khoa);
-    return res.json(apiCode.success(userInfo, `Get User Info Success`));
-    })
-    .catch((err) => {
-      return res.json(apiCode.error(err, "Get User Info Fail"));
     });
 };
 

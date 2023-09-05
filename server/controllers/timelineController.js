@@ -13,6 +13,7 @@ const apiCode = new ApiCode();
 const listYears = (req, res) => {
   TimeLine.findAll({
     attributes: ["year"],
+    order: [['year']],
   })
   .then((listYears) => {
     return res.json(apiCode.success(listYears, "List All Years Success"));
