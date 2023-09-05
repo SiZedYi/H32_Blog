@@ -6,21 +6,12 @@ USE h32_blog;
 CREATE TABLE USER (
 	userID INT PRIMARY KEY AUTO_INCREMENT,
 	accountName VARCHAR(50) NOT NULL UNIQUE,
-<<<<<<< HEAD
-  passWord VARCHAR(50) NOT NULL,
-  fullName VARCHAR(50) NOT NULL,
-  academicYear  INT,
-  about TEXT,
-  major NVARCHAR(50),
-  currentJob NVARCHAR(50)
-=======
     passWord VARCHAR(50) NOT NULL,
     fullName VARCHAR(50) NOT NULL,
     academicYear  INT,
     about TEXT,
     major NVARCHAR(50),
     currentJob TEXT
->>>>>>> fdc75082f139da995d7e66950a92e1a760077cd2
 );
 
 CREATE TABLE USERROLE (
