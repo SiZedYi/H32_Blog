@@ -53,6 +53,10 @@ const getUserInfo = (req, res) => {
   })
   .then((userInfo) => {
     userInfo.dataValues.countedYear = userInfo.academicYear - 2004;
+    if (!userInfo.currentJob) {
+      userInfo.currentJob = "Sinh viên trường Đại học Công Nghiệp TPHCM "
+    }
+
     console.log(userInfo.countedYear);
 
     return res.json(apiCode.success(userInfo, `Get User Info Success`));
