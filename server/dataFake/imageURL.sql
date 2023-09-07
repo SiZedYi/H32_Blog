@@ -26,7 +26,7 @@ VALUE
 ("Img_24",8,"https://i.imgur.com/v8v65pN.webp","https://i.imgur.com/FuEm4do.webp"),
 ("Img_25",9,"https://i.imgur.com/Q7jmeYI.webp","https://i.imgur.com/xUHN74t.webp"),
 ("Img_26",26,"https://i.imgur.com/ky5UC8O.webp","https://i.imgur.com/mhMs3Np.webp"),
-("Img_27",27+60,"a","https://cdn-icons-png.flaticon.com/512/4404/4404257.png"),
+("Img_27",27+60,"a","https://cdn-icons-png.flaticon.com/512/4404/4404257.webp"),
 ("Img_28",20,"https://i.imgur.com/6qbRgCv.webp","https://i.imgur.com/NmAHxWy.webp"),
 ("Img_29",29,"https://i.imgur.com/VuzajLL.webp","https://i.imgur.com/UN4lUc0.webp"),
 ("Img_30",5,"https://i.imgur.com/DhZD3Q3.webp","https://i.imgur.com/kk2gURU.webp"),

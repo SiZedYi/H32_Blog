@@ -1,4 +1,4 @@
--- drop database h32_blog;
+drop database h32_blog;
 SHOW DATABASES;
 CREATE DATABASE h32_blog;
 SHOW DATABASES;
