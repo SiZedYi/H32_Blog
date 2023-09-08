@@ -1,1 +1,0 @@
-cloudflared tunnel --config .cloudflared/config.yml --url localhost:3200 run acb04b33-4263-4fcf-9b35-5898217afdc1
