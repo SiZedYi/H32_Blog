@@ -6,13 +6,13 @@ var fs = require("fs");
 require('dotenv').config();
 var myCon = mysql.createConnection({
   host: process.env.HOST_NAME || "localhost",
-  port: process.env.PORT || "3200",
+  port: process.env.DB_PORT || "3306",
   //  database: process.env.DB_NAME || 'h32_blog',
   user: process.env.DB_USER || "root",
   password: process.env.DB_PASSWORD || "123456",
 });
 
-fs.readFile("h32blog.sql", "utf8", function (err, data) {
+fs.readFile("dump_file.sql", "utf8", function (err, data) {
   if (err) {
     console.log(err);
     return;

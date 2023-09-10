@@ -1,3 +1,0 @@
-tunnel: acb04b33-4263-4fcf-9b35-5898217afdc1
-credentials-file: .cloudflared/credentials.json
-noTLSVerify: true
