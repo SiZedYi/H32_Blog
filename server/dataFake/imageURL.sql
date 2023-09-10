@@ -34,7 +34,7 @@ VALUE
 ("Img_32",3,"https://i.imgur.com/pa0kNVa.webp","https://i.imgur.com/JFSgB8K.webp"),
 ("Img_33",24,"https://i.imgur.com/LIID4Gy.webp","https://i.imgur.com/6c7ItGE.webp"),
 ("Img_34",25,"https://i.imgur.com/SLRkeVA.webp","https://i.imgur.com/zsDtyo3.png"),
-("Img_35",35+60,"a","https://cdn-icons-png.flaticon.com/512/4404/4404257.png"),
+("Img_35",35+60,"https://i.imgur.com/UQmwFHu.webp","https://i.imgur.com/0TpjKyc.webp"),
 ("Img_36",36,"https://i.imgur.com/NAWLPdy.webp","https://i.imgur.com/0swTsXw.webp"),
 ("Img_37",21,"https://i.imgur.com/1VxneSh.webp","https://i.imgur.com/NpW2ZK7.webp"),
 ("Img_38",38,"https://i.imgur.com/uWlii6c.webp","https://i.imgur.com/ybuKwk0.webp"),
