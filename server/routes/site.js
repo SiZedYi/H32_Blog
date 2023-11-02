@@ -11,6 +11,11 @@ const {
   listYears,
   getYearInfor,
 } = require("../controllers/timelineController");
+
+const {
+  listFoods,
+  getFoodInfo,
+} = require("../controllers/foodController");
 const router = require("express").Router();
 
 
@@ -28,5 +33,9 @@ router.get("/list-roles/:roleID", getAllUserInRole);
 // Timeline
 router.get("/list-years", listYears);
 router.get("/list-years/:year", getYearInfor);
+
+//Food
+router.get("/list-foods", listFoods);
+router.get("/list-foods/:foodID", getFoodInfo);
 
 module.exports = router;
