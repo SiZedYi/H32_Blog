@@ -17,7 +17,11 @@ Food.init(
         imgFood: {
             type: DataTypes.TEXT,
         },
-        price: {
+        minPrice: {
+            type: DataTypes.DOUBLE,
+            allowNull: false,
+        },
+        maxPrice: {
             type: DataTypes.DOUBLE,
             allowNull: false,
         },
