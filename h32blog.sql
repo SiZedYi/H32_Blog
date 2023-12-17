@@ -1,4 +1,4 @@
--- drop database h32_blog;
+drop database h32_blog;
 SHOW DATABASES;
 CREATE DATABASE h32_blog;
 SHOW DATABASES;
@@ -55,3 +55,13 @@ CREATE TABLE TimeLine (
     year INT DEFAULT '2',
     title TEXT NOT NULL
 );
+
+CREATE TABLE Food(
+    foodID INT PRIMARY KEY AUTO_INCREMENT,
+    name TEXT NOT NULL,
+    imgFood TEXT,
+    minPrice DOUBLE NOT NULL,
+    maxPrice DOUBLE NOT NULL,
+    address TEXT,
+    moreInf TEXT
+)
